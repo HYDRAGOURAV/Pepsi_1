@@ -1,0 +1,530 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+
+  overflow-x: hidden;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+/* image section */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 90vh;
+  align-items: center;
+  background: rgb(0, 0, 1);
+  background: linear-gradient(119deg, rgba(0, 0, 1, 1) 79%, rgba(9, 9, 121, 1) 83%, rgba(11, 11, 43, 1) 91%);
+}
+
+#box2 img {
+  height: 500px;
+  width: 500px;
+}
+
+/* second section */
+.second_section {
+  height: 110vh;
+  background: rgb(0, 0, 1);
+  background: linear-gradient(119deg, rgba(0, 0, 1, 1) 58%, rgba(9, 9, 121, 1) 62%, rgba(11, 11, 43, 1) 70%);
+}
+
+.logo img {
+  width: 40px;
+  display: inline-block;
+}
+
+/* container_2 */
+.container_2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+}
+
+.box_2 {
+  height: 400px;
+  width: 400px;
+}
+
+#box_1 {
+  height: 300px;
+  width: 300px;
+  border: 10px solid rgb(177, 167, 167);
+  border-radius: 50%;
+}
+
+#box_1 img {
+  position: relative;
+  bottom: 112px;
+}
+
+.pep_image {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pep_box {
+  height: 120px;
+  width: 120px;
+  margin-inline-start: 12px;
+  cursor: pointer;
+}
+
+.box_2 h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.box_2 p {
+  color: white;
+  font-size: 12px;
+}
+
+/* section 3 */
+.Third {
+  height: 100vh;
+  background: rgb(0, 2, 9);
+}
+
+.container__3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90vh;
+}
+
+.container_box {
+  max-height: auto;
+  max-width: auto;
+  align-items: center;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.container_box img {
+  filter: drop-shadow(rgb(129, 129, 219) 0rem 0rem 18px);
+  transition: transform 0.3s ease;
+}
+
+.container_box img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.BTN {
+  background-color: antiquewhite;
+}
+
+.container_box:nth-child(1) button {
+  position: relative;
+  top: -16px;
+  left: 19px;
+}
+
+.container__4 {
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #101813;
+  position: relative;
+}
+
+.last_box {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  /* display: flex;
+  justify-content: space-evenly;*/
+  /* align-items: center;  */
+  text-align: center;
+  position: absolute;
+  background: rgb(2, 2, 2);
+  border-radius: 10px;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+  color: white;
+}
+
+.last_box img {
+  height: 300px;
+  width: 300px;
+}
+
+.wrapper {
+  /* position: absolute; */
+  /* top: 10%; */
+  /* left: 40%; */
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.last_box:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+/* ----------------------------------------------- */
+#lastBox4:hover~#lastBox1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------------------------------------------------- */
+.Last {
+  height: 350px;
+  max-width: auto;
+}
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.09) rotate(-2deg);
+}
+
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+.The_foot {
+  width: 100%;
+  display: inline-block;
+  background: #0f0d0d;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  background: #0a0808;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+
+/* Media Query  */
+
+@media screen and (max-width: 768px) {
+  #box2 img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -3px;
+  }
+
+  #box1 img {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .second_section {
+    background: linear-gradient(119deg, rgba(0, 0, 1, 1) 27%, rgba(9, 9, 121, 1) 34%, rgba(11, 11, 43, 1) 38%)
+  }
+
+  .container_2 {
+    flex-direction: column;
+  }
+
+  .container__3 {
+    flex-direction: column;
+  }
+
+  .container_box img {
+    height: 190px;
+    width: 120px;
+  }
+
+  .container_box {
+    margin-top: 20px;
+  }
+
+  .Third {
+    height: 1100px;
+  }
+
+  .container_box:nth-child(1) button {
+    background-color: #000000;
+    color: #ffffff;
+    left: -1px;
+  }
+
+  .button-33 {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .second_section {
+    height: 750px;
+  }
+
+  .pep_image {
+    margin-top: 50px;
+  }
+
+  .box_2 h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .box_2 p {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #box_1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+  }
+
+  #box_1 img {
+    bottom: 30px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .container__4 {
+    flex-direction: column;
+    height: 120vh;
+  }
+
+  .Last {
+    height: 115vh;
+  }
+
+  .last_box {
+    text-align: center;
+    height: 300px;
+    max-width: auto;
+    margin: 0 auto;
+  }
+
+  .last_box img {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+  }
+}
+
+/* section Card button' */

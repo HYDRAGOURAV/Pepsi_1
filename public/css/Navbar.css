@@ -1,0 +1,71 @@
+nav {
+    height: 100px;
+    background-color: black;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 50px;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    position: relative;
+    width: 100%;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+  }
+  
+  .logo {
+    display: inline-block;
+    position: relative;
+    left: 38px;
+    top: 29px;
+  }
+  
+  .Name_com h1 {
+    font-size: 4em;
+    position: absolute;
+    top: 230px;
+    left: 350px;
+    color: red;
+  }
+  @media screen and (max-width: 768px) {
+    nav ul li {
+      margin-right: 10px;
+    }
+  
+    nav ul {
+      line-height: 30px;
+    }
+  
+    #box2 img {
+      height: 250px;
+      width: 250px;
+    }
+  
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: -3px;
+    }
+  }  
